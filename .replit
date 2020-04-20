@@ -1,0 +1,13 @@
+const Discord = require("discord.js");
+const bot = new Discord.Client();
+
+bot.on("ready", function() {
+    console.log("Le Bot est dans la place !");
+})
+bot.login("NzAxNzk4NDg4NTE3NzcxMzM0.Xp2u5w.btJJRca0oAjDvz56VG8fiVg6f1U");
+
+bot.on("message", message => {
+    if (message.content === "!ping") {
+        message.channel.send("BOOM !!!");
+    }
+});s
